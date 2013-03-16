@@ -34,9 +34,32 @@
         //Put on map
         marker.setMap(map);
 
+{#	    google.maps.event.addListener(map, 'bounds_changed', function (e) { console.log(map.getBounds().getNorthEast().lat());  });#}
+{#	    google.maps.event.addListener(map, 'zoom_changed', function() { console.log(map.getBounds());  });#}
+
+	    checkBounds();
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+
+
+
+    function checkBounds()
+    {
+	    if(map != null && map.getBounds() != null)
+	    {
+		    console.log(map.getBounds().getNorthEast().lat());
+            console.log(map.getBounds().getNorthEast().lng());
+            console.log(map.getBounds().getSouthWest().lat());
+            console.log(map.getBounds().getSouthWest().lng());
+	    }
+
+
+	    setTimeout(checkBounds, 5000);
+    }
 
     setTimeout(moveMarker, 2000);
 
