@@ -7,6 +7,7 @@ from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'aismap.views.home', name='home'),
+    url(r'^raw$', 'aismap.views.rawdata', name='home'),
     # url(r'^aismapping/', include('aismapping.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
