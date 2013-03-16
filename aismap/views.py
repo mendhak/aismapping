@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 import ais
 import collections
+import sqlite3
 
 
 def home(request):
@@ -12,6 +13,27 @@ def home(request):
     html = "<html><body>It is now %s.</body></html>" % now
     resp = HttpResponse()
     return render_to_response("map.html")
+
+def getVisibleShips(request):
+    toprightx = request.GET.get('toprightx')
+    toprighty = request.GET.get('toprighty')
+    bottomleftx = request.GET.get('bottomleftx')
+    bottomlefty = request.GET.get('bottomlefty')
+
+    conn = sqlite3.connect(r"ais.db")
+    resp = HttpResponse()
+    with conn:
+
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM AIVDM WHERE x > {0} AND x < {1} AND y > {2} ANd y < {3} LIMIT 20"
+                    .format(bottomleftx, toprightx, bottomlefty, toprighty))
+        rows = cur.fetchall()
+
+        for row in rows:
+            resp.write(row)
+
+    return resp
+
 
 def rawdata(request):
     resp = HttpResponse()
@@ -41,7 +63,7 @@ def rawdata(request):
 
 
 def storedata(request):
-    import sqlite3
+
     conn = sqlite3.connect(r"ais.db")
 
     with conn:
