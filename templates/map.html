@@ -3,6 +3,7 @@
 <head>
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBmmaB__L5JXrHhYho5OI11l3xWvZc06L8&sensor=false">
 </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <style type="text/css">
 	body,html {height:  100%; width: 100%; margin: 0;}
 </style>
@@ -47,10 +48,13 @@
     {
 	    if(map != null && map.getBounds() != null)
 	    {
-		    console.log(map.getBounds().getNorthEast().lat());
-            console.log(map.getBounds().getNorthEast().lng());
-            console.log(map.getBounds().getSouthWest().lat());
-            console.log(map.getBounds().getSouthWest().lng());
+		    $.get("/getvisible?toprightx=" + map.getBounds().getNorthEast().lng()
+				          + "&toprighty=" + map.getBounds().getNorthEast().lat()
+				          + "&bottomleftx=" + map.getBounds().getSouthWest().lng()
+				          + "&bottomlefty=" + map.getBounds().getSouthWest().lat(),
+		          function(data){
+		            console.log( data);
+		            });
 	    }
 
 
