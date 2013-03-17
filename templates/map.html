@@ -61,6 +61,18 @@
 					    var newMarker=new google.maps.LatLng(entry.y,entry.x);
 					    var rot =  90;
 
+					    var iconShape = "M150 0 L75 200 L225 200 Z";
+					    var iconScale = 0.09;
+					    var iconColor = "green";
+
+					    if(entry.navstatus == "15" || entry.navstatus == "1" || entry.navstatus == "2" || entry.navstatus == "5" || entry.navstatus == "6")
+
+					    {
+						    iconShape = google.maps.SymbolPath.CIRCLE;
+						    iconScale = 5;
+						    iconColor = "red";
+						}
+
 					    if(entry.heading != "511")
 					    {
 						    rot = entry.heading;
@@ -72,12 +84,12 @@
 	                    newMarker=new google.maps.Marker({ position:newMarker,animation: google.maps.Animation.DROP,
 
 		                                                     icon: {
-			                                                     path: "M150 0 L75 200 L225 200 Z",
-			                                                     fillColor: "green",
+			                                                     path: iconShape,
+			                                                     fillColor: iconColor,
 			                                                     fillOpacity: 0.7,
-			                                                     scale: 0.09,
+			                                                     scale: iconScale,
 			                                                     strokeColor: "gold",
-			                                                     //strokeWeight: 14,
+			                                                     strokeWeight: 0,
 		                                                         rotation: rot
 		                                                     }
 		                                                  });
