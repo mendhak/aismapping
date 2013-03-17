@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f511e52c-0c6c-4e35-9ead-c469e69626b1" name="Default" comment="Red circle for aground/anchored/moored vehicles">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/map.html" afterPath="$PROJECT_DIR$/templates/map.html" />
+    <list default="true" id="f511e52c-0c6c-4e35-9ead-c469e69626b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aismap/views.py" afterPath="$PROJECT_DIR$/aismap/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aismapping.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363508859607" ignored="false" />
-    <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510704057" ignored="false" />
-    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510861606" ignored="false" />
+    <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510910128" ignored="false" />
+    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510877975" ignored="false" />
     <file path="/a.dummy" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363463952622" ignored="false" />
     <file path="/urls.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363475633532" ignored="false" />
     <file path="/README.md" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363471178294" ignored="false" />
@@ -54,7 +53,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aismap/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.65488565">
+            <state line="37" column="46" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.5925156">
               <folding />
             </state>
           </provider>
@@ -410,7 +409,11 @@
       <created>1363509890210</created>
       <updated>1363509890210</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Upped limit to 35 items at a time">
+      <created>1363510882539</created>
+      <updated>1363510882539</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -476,7 +479,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Red circle for aground/anchored/moored vehicles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upped limit to 35 items at a time" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -499,6 +502,7 @@
     <MESSAGE value="Decreased timeout to 2seconds" />
     <MESSAGE value="Created markers (SVG) with rotation" />
     <MESSAGE value="Red circle for aground/anchored/moored vehicles" />
+    <MESSAGE value="Upped limit to 35 items at a time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,7 +570,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aismap/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.65488565">
+        <state line="37" column="46" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.5925156">
           <folding />
         </state>
       </provider>
