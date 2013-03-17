@@ -14,6 +14,8 @@ def home(request):
     resp = HttpResponse()
     return render_to_response("map.html")
 
+def marinetraffic(request):
+    return render_to_response("marinetrafficembedded.html")
 
 def getVisibleShips(request):
     toprightx = request.GET.get('toprightx')

@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f511e52c-0c6c-4e35-9ead-c469e69626b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/marinetrafficembedded.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aismap/views.py" afterPath="$PROJECT_DIR$/aismap/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aismapping.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363508859607" ignored="false" />
-    <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510910128" ignored="false" />
-    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510877975" ignored="false" />
+    <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363511980480" ignored="false" />
+    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363511471114" ignored="false" />
     <file path="/a.dummy" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363463952622" ignored="false" />
-    <file path="/urls.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363475633532" ignored="false" />
+    <file path="/urls.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363512012632" ignored="false" />
     <file path="/README.md" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363471178294" ignored="false" />
     <file path="/fragment.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363472947428" ignored="false" />
     <file path="/.gitignore" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363474177685" ignored="false" />
     <file path="/map.html" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363510574984" ignored="false" />
+    <file path="/marinetrafficembedded.html" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363512072531" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +53,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aismap/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="46" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.5925156">
+            <state line="17" column="59" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="54" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="marinetrafficembedded.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/marinetrafficembedded.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="39" selection-start="894" selection-end="894" vertical-scroll-proportion="0.4585153">
               <folding />
             </state>
           </provider>
@@ -79,12 +100,13 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/static/infobox.js" />
         <option value="$PROJECT_DIR$/static/jqueryrotate.js" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/templates/map.html" />
         <option value="$PROJECT_DIR$/aismap/views.py" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/templates/marinetrafficembedded.html" />
       </list>
     </option>
   </component>
@@ -413,7 +435,11 @@
       <created>1363510882539</created>
       <updated>1363510882539</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Randomized selection from table">
+      <created>1363511472606</created>
+      <updated>1363511472606</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -479,7 +505,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upped limit to 35 items at a time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Randomized selection from table" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -503,13 +529,14 @@
     <MESSAGE value="Created markers (SVG) with rotation" />
     <MESSAGE value="Red circle for aground/anchored/moored vehicles" />
     <MESSAGE value="Upped limit to 35 items at a time" />
+    <MESSAGE value="Randomized selection from table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/aismap/views.py</url>
-          <line>28</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -547,9 +574,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
+        <state line="74" column="25" selection-start="2205" selection-end="2205" vertical-scroll-proportion="-11.086957">
           <folding />
         </state>
       </provider>
@@ -561,16 +588,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
+    <entry file="file://$PROJECT_DIR$/aismap/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="25" selection-start="2205" selection-end="2205" vertical-scroll-proportion="-11.086957">
+        <state line="17" column="59" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aismap/views.py">
+    <entry file="file://$PROJECT_DIR$/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="46" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.5925156">
+        <state line="12" column="54" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/marinetrafficembedded.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="894" selection-end="894" vertical-scroll-proportion="0.4585153">
           <folding />
         </state>
       </provider>

@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^raw$', 'aismap.views.rawdata', name='home'),
     url(r'^process', 'aismap.views.storedata', name='home'),
     url(r'^getvisible$', 'aismap.views.getVisibleShips', name='home'),
+    url(r'^marinetraffic', 'aismap.views.marinetraffic', name='home'),
     # url(r'^aismapping/', include('aismapping.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
