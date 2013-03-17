@@ -30,7 +30,7 @@ def getVisibleShips(request):
     resp = HttpResponse()
     with conn:
         cur = conn.cursor()
-        cur.execute("SELECT * FROM AIVDM WHERE x > {0} AND x < {1} AND y > {2} ANd y < {3} LIMIT 20"
+        cur.execute("SELECT * FROM AIVDM WHERE x > {0} AND x < {1} AND y > {2} ANd y < {3} LIMIT 35"
         .format(bottomleftx, toprightx, bottomlefty, toprighty))
         rows = cur.fetchall()
 
