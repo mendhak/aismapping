@@ -56,21 +56,12 @@ def rawdata(request):
             if m:
                 aisData = m.group('ais')
                 try:
-                    aiss.append(ais.decode(aisData, 0))
-                    mmsis.append(ais.decode(aisData, 0).get('mmsi'))
+                    resp.write(ais.decode(aisData, 0))
                 except:
                     pass
                     #resp.write("Could not decode " + aisData)
-        resp.write("<br/>")
-        repeated = ([x for x, y in collections.Counter(mmsis).items() if y > 2])
-        for mm in repeated:
-            for rm in (item for item in aiss if item["mmsi"] == mm):
-                resp.write(
-                    str(rm.get('mmsi')) + " at " + str(rm.get('timestamp')) + " at " + str(rm.get('x')) + "," + str(
-                        rm.get('y')))
-                resp.write("<br/>")
+                resp.write("<br/><br />")
 
-    #resp.write(file(os.path.join(os.path.dirname(os.path.abspath(__file__)),"nmea-sample.txt")).read())
     return resp
 
 
