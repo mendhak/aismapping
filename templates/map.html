@@ -12,6 +12,7 @@
 
     var map;
     var items = new Object();
+    var currentInfoWindow;
 
     function initialize()
     {
@@ -99,6 +100,29 @@
 	                    newMarker.setMap(map);
 
 					    items[entry.mmsi]=newMarker;
+
+
+
+
+					    google.maps.event.addListener(newMarker, 'click', function() {
+						    if(currentInfoWindow != null)
+						    {
+							    currentInfoWindow.close();
+						    }
+
+						    var contentString = '<iframe height="440px" style="overflow-y:hidden;border:none;" id="' + entry.mmsi + '" src="http://www.marinetraffic.com/ais/shipinfo.aspx?mmsi=' + entry.mmsi + '&header=true&"></iframe>';
+
+						   					    var infowindow = new google.maps.InfoWindow({
+						   					        content: contentString
+						   					    });
+
+						    currentInfoWindow = infowindow;
+					        infowindow.open(map,newMarker);
+
+						    //$('#' + entry.mmsi).load('http://www.marinetraffic.com/ais/shipinfo.aspx?mmsi=357345000&header=true&');
+
+					    });
+
 				    }
 				    else
 				    {
