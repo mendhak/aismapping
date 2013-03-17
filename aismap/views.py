@@ -34,7 +34,7 @@ def getVisibleShips(request):
         rows = cur.fetchall()
 
         for row in rows:
-            jsonArray += "{{ \"mmsi\":\"{0}\",\"x\":\"{1}\",\"y\":\"{2}\" }},".format(row[0],row[1],row[2])
+            jsonArray += "{{ \"mmsi\":\"{0}\",\"x\":\"{1}\",\"y\":\"{2}\",\"heading\":\"{3}\" }},".format(row[0],row[1],row[2],row[4])
 
     jsonArray = jsonArray[:-1] + "    ]}"
 

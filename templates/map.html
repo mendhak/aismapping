@@ -57,10 +57,30 @@
 				    if(items[entry.mmsi] == null)
 				    {
 
+
 					    var newMarker=new google.maps.LatLng(entry.y,entry.x);
+					    var rot =  90;
+
+					    if(entry.heading != "511")
+					    {
+						    rot = entry.heading;
+						}
+
+
 
 					    //Marker from lat long
-	                    newMarker=new google.maps.Marker({ position:newMarker,animation: google.maps.Animation.DROP });
+	                    newMarker=new google.maps.Marker({ position:newMarker,animation: google.maps.Animation.DROP,
+
+		                                                     icon: {
+			                                                     path: "M150 0 L75 200 L225 200 Z",
+			                                                     fillColor: "green",
+			                                                     fillOpacity: 0.7,
+			                                                     scale: 0.09,
+			                                                     strokeColor: "gold",
+			                                                     //strokeWeight: 14,
+		                                                         rotation: rot
+		                                                     }
+		                                                  });
 
 	                    //Put on map
 	                    newMarker.setMap(map);
