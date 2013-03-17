@@ -11,14 +11,14 @@
 <script>
 
     var map;
-    var marker;
+    var items = new Object();
 
     function initialize()
     {
         //Map properties
         var mapProp = {
         center:new google.maps.LatLng(51.508742,-0.120850),
-        zoom:5,
+        zoom:8,
         mapTypeId:google.maps.MapTypeId.ROADMAP
         };
 
@@ -26,14 +26,6 @@
         map=new google.maps.Map(document.getElementById("googleMap")
         ,mapProp);
 
-        //Simple lat long for center
-        var myCenter=new google.maps.LatLng(51.508742,-0.120850);
-
-        //Marker from lat long
-        marker=new google.maps.Marker({ position:myCenter,animation:google.maps.Animation.DROP });
-
-        //Put on map
-        marker.setMap(map);
 
 {#	    google.maps.event.addListener(map, 'bounds_changed', function (e) { console.log(map.getBounds().getNorthEast().lat());  });#}
 {#	    google.maps.event.addListener(map, 'zoom_changed', function() { console.log(map.getBounds());  });#}
@@ -46,7 +38,9 @@
 
     function checkBounds()
     {
-	    if(map != null && map.getBounds() != null)
+	    console.log(map.getZoom());
+
+	    if(map != null && map.getBounds() != null && map.getZoom() > 7)
 	    {
 
 		    var visibleUrl = "/getvisible?toprightx=" + map.getBounds().getNorthEast().lng()
@@ -55,13 +49,34 @@
 		    				          + "&bottomlefty=" + map.getBounds().getSouthWest().lat();
 
 		    $.getJSON(visibleUrl, function(data) {
-		      var items = [];
 
-			    console.log(data);
 
-		      $.each(data, function(key, val) {
-		        console.log(key + ":" + val);
-		      });
+			    //console.log(data);
+			    data.ships.forEach(function(entry) {
+
+				    if(items[entry.mmsi] == null)
+				    {
+
+					    var newMarker=new google.maps.LatLng(entry.y,entry.x);
+
+					    //Marker from lat long
+	                    newMarker=new google.maps.Marker({ position:newMarker });
+
+	                    //Put on map
+	                    newMarker.setMap(map);
+
+					    items[entry.mmsi]=newMarker;
+				    }
+				    else
+				    {
+					    console.log("Already exists");
+				    }
+
+			    });
+
+			    //console.log(ships[0])
+
+
 		    });
 
 
@@ -71,14 +86,6 @@
 	    setTimeout(checkBounds, 5000);
     }
 
-    setTimeout(moveMarker, 2000);
-
-	function moveMarker()
-	{
-		var newLatLng = new google.maps.LatLng(33.1313, 44.1933);
-		marker.setPosition(newLatLng);
-		marker.setMap(map);
-	}
 
 </script>
 </head>
