@@ -20,19 +20,25 @@ def getVisibleShips(request):
     bottomleftx = request.GET.get('bottomleftx')
     bottomlefty = request.GET.get('bottomlefty')
 
+# { "mmsi":"12341234","x":"1234","y":"234" },
+#     { "mmsi":"12341234","x":"1234","y":"234" },
+
+    jsonArray = "{\"ships\": [ "
+
     conn = sqlite3.connect(r"ais.db")
     resp = HttpResponse()
     with conn:
-
         cur = conn.cursor()
         cur.execute("SELECT * FROM AIVDM WHERE x > {0} AND x < {1} AND y > {2} ANd y < {3} LIMIT 20"
                     .format(bottomleftx, toprightx, bottomlefty, toprighty))
         rows = cur.fetchall()
 
         for row in rows:
-            resp.write(row)
+            jsonArray += "{{ \"mmsi\":\"{0}\",\"x\":\"{1}\",\"y\":\"{2}\" }},".format(row[0],row[1],row[2])
 
-    return resp
+    jsonArray = jsonArray[:-1] + "    ]}"
+
+    return HttpResponse(jsonArray,mimetype="application/json")
 
 
 def rawdata(request):

@@ -3,19 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="f511e52c-0c6c-4e35-9ead-c469e69626b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/map.html" afterPath="$PROJECT_DIR$/templates/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aismap/views.py" afterPath="$PROJECT_DIR$/aismap/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aismapping.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363462969162" ignored="false" />
-    <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363476244495" ignored="false" />
-    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363476805438" ignored="false" />
+    <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363478567579" ignored="false" />
+    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363477237732" ignored="false" />
     <file path="/a.dummy" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363463952622" ignored="false" />
     <file path="/urls.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363475633532" ignored="false" />
     <file path="/README.md" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363471178294" ignored="false" />
     <file path="/fragment.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363472947428" ignored="false" />
     <file path="/.gitignore" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363474177685" ignored="false" />
-    <file path="/map.html" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363477185670" ignored="false" />
+    <file path="/map.html" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363478356849" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +33,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="33" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.50873363">
+            <state line="59" column="34" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-11.434783">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -52,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aismap/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="25" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.7006237">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -115,8 +116,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/aismap/views.py" />
         <option value="$PROJECT_DIR$/templates/map.html" />
+        <option value="$PROJECT_DIR$/aismap/views.py" />
       </list>
     </option>
   </component>
@@ -409,7 +410,11 @@
       <created>1363476819072</created>
       <updated>1363476819072</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="JS calling out for visible ships based on bounds">
+      <created>1363477240056</created>
+      <updated>1363477240056</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,7 +480,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retrieve positions based on map bounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS calling out for visible ships based on bounds" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -492,13 +497,14 @@
     <MESSAGE value="Demo link" />
     <MESSAGE value="JS to get map bounds every few seconds" />
     <MESSAGE value="Retrieve positions based on map bounds" />
+    <MESSAGE value="JS calling out for visible ships based on bounds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/aismap/views.py</url>
-          <line>22</line>
+          <line>27</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -554,20 +560,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aismap/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+        <state line="59" column="34" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-11.434783">
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/map.html">
+    <entry file="file://$PROJECT_DIR$/aismap/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="33" selection-start="1861" selection-end="1861" vertical-scroll-proportion="0.50873363">
+        <state line="34" column="0" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.7006237">
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

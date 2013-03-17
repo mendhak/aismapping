@@ -48,13 +48,23 @@
     {
 	    if(map != null && map.getBounds() != null)
 	    {
-		    $.get("/getvisible?toprightx=" + map.getBounds().getNorthEast().lng()
-				          + "&toprighty=" + map.getBounds().getNorthEast().lat()
-				          + "&bottomleftx=" + map.getBounds().getSouthWest().lng()
-				          + "&bottomlefty=" + map.getBounds().getSouthWest().lat(),
-		          function(data){
-		            console.log( data);
-		            });
+
+		    var visibleUrl = "/getvisible?toprightx=" + map.getBounds().getNorthEast().lng()
+		    				          + "&toprighty=" + map.getBounds().getNorthEast().lat()
+		    				          + "&bottomleftx=" + map.getBounds().getSouthWest().lng()
+		    				          + "&bottomlefty=" + map.getBounds().getSouthWest().lat();
+
+		    $.getJSON(visibleUrl, function(data) {
+		      var items = [];
+
+			    console.log(data);
+
+		      $.each(data, function(key, val) {
+		        console.log(key + ":" + val);
+		      });
+		    });
+
+
 	    }
 
 
