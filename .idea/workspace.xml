@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363462969162" ignored="false" />
     <file path="/views.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363478567579" ignored="false" />
-    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363478612185" ignored="false" />
+    <file path="/Dummy.txt" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363480893148" ignored="false" />
     <file path="/a.dummy" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363463952622" ignored="false" />
     <file path="/urls.py" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363475633532" ignored="false" />
     <file path="/README.md" changelist="f511e52c-0c6c-4e35-9ead-c469e69626b1" time="1363471178294" ignored="false" />
@@ -35,7 +35,7 @@
       <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.44323143">
+            <state line="85" column="33" selection-start="2193" selection-end="2193" vertical-scroll-proportion="1.5240175">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -417,7 +417,11 @@
       <created>1363478615082</created>
       <updated>1363478615082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Markers tracked in array and added to map">
+      <created>1363480895516</created>
+      <updated>1363480895516</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -483,7 +487,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Return as JSON array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Markers tracked in array and added to map" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -502,6 +506,7 @@
     <MESSAGE value="Retrieve positions based on map bounds" />
     <MESSAGE value="JS calling out for visible ships based on bounds" />
     <MESSAGE value="Return as JSON array" />
+    <MESSAGE value="Markers tracked in array and added to map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -575,7 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.44323143">
+        <state line="85" column="33" selection-start="2193" selection-end="2193" vertical-scroll-proportion="1.5240175">
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

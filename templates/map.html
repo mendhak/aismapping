@@ -60,7 +60,7 @@
 					    var newMarker=new google.maps.LatLng(entry.y,entry.x);
 
 					    //Marker from lat long
-	                    newMarker=new google.maps.Marker({ position:newMarker });
+	                    newMarker=new google.maps.Marker({ position:newMarker,animation: google.maps.Animation.DROP });
 
 	                    //Put on map
 	                    newMarker.setMap(map);
@@ -83,7 +83,7 @@
 	    }
 
 
-	    setTimeout(checkBounds, 5000);
+	    setTimeout(checkBounds, 2000);
     }
 
 
